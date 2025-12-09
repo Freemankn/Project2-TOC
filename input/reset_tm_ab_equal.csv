@@ -1,0 +1,20 @@
+reset-a^nb^n-equal
+q1 q2 q3 q4 qacc qrej
+a b
+a b X Y _
+q1
+qacc
+qrej
+q1,X,q1,X,R
+q1,a,q2,X,R
+q1,Y,q4,Y,R
+q2,X,q2,X,R
+q2,a,q2,a,R
+q2,Y,q2,Y,R
+q2,b,q3,Y,R
+q2,_,qrej,_,L
+q3,b,q1,b,L
+q3,_,q1,_,L
+q4,Y,q4,Y,R
+q4,_,qacc,_,R
+q4,b,qrej,b,R
